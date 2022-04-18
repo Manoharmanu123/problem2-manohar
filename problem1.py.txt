@@ -1,0 +1,51 @@
+class Bankaccount:
+    from BankPackage import BankInfo as BNK
+    def __init__(acct1):
+        acct1.balance=5000
+        print(acct1)
+    def deposit(acct1):
+        amount = float(input("Enter amount to Deposited : "))
+        acct1.balance += amount
+        print("\n Amount Deposited : ". amount)
+    def withdraw(acct2):
+        amount = float(input("Enter amount to withdrawn : "))
+        print("\n Amount Deposited : ".amount)
+acct1 = BNK.Account(5000, "Sachin")
+acct1.Deposit(1000)
+acct1.Withdrawl(2000)
+print(acct1)
+acct2 = BNK.Account(3000, "Ali")
+acct2.Deposit(500)
+acct2.Withdrawl(250)
+print(acct2)
+if(acct1 == acct2):
+    print("They have Equal Balance")
+else:
+    print("They are Different Balance")
+if(acct1 != acct2):
+    print("They are Not Equal")
+else:
+    print("They are Equal")
+if(acct2 > acct1):
+    print("acct2 should pay more tax")
+else:
+    print("acct1 should pay normal tax")
+if(acct2 < acct1):
+    print("Sponsor fot two children")
+else:
+    print("Start an Orphange")
+if(acct2 >= acct1):
+    print("Go Europe Trip")
+else:
+    print("Go for Excursion")
+if(acct1 <= acct2):
+    print("We can have Coffee")
+else:
+    print("We can have meal")
+acct1.AddNominee("Ranjini")
+acct1.AddNominee("Rajini")
+acct1.AddNominee("Malini")
+acct1.AddNominee("Rukmini")
+print(len(acct1))
+for amount in acct1:
+print(amount)
